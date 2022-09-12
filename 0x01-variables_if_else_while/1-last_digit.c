@@ -5,7 +5,7 @@
 /**
  * main - program assigns radom number to variable n
  * prints last digit of number in a statement
- * Return:0 if properly exits
+ * Return:0 if properly exits ..
 */
 
 int main(void)
