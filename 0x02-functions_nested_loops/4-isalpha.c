@@ -1,6 +1,6 @@
 #include "main.h"
 
-/** 
+/**
  * _isalpha - cheacks if input is an alphabetic character
  * Return:1 if alphabet and 0 otherwise
 */
@@ -8,7 +8,7 @@
 int _isalpha(int c)
 {
 	char low, up;
-	int letter =0;
+	int letter = 0;
 
 	for (low = 'a'; low <= 'z'; low++)
 	{
