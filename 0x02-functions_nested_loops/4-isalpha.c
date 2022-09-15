@@ -5,7 +5,7 @@
  * Return:1 if alphabet and 0 otherwise
 */
 
-int _isalpha(int c);
+int _isalpha(int c)
 {
 	char low, up;
 	int letter =0;
