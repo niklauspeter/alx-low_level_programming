@@ -2,6 +2,7 @@
 
 /**
  * _isalpha - cheacks if input is an alphabetic character
+ * @c: parameter for value c
  * Return:1 if alphabet and 0 otherwise
 */
 
