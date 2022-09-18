@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _isupper - function cecks if argument is uppercase
@@ -10,14 +9,15 @@
 int _isupper(int c)
 {
 	char uppercase = 'A';
+	int isupper = 0;
 
-	for (uppercase = 'A'; uppercase <= 'Z'; uppercase++)
+	for (; uppercase <= 'Z'; uppercase++)
 	{
 		if (c == uppercase)
 		{
-			return (1);
+			isupper = 1;
+			break;
 		}
-		else
-			return (0);
 	}
+	return (isupper);
 }
