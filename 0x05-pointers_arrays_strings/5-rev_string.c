@@ -3,7 +3,7 @@
 /**
  * rev_string - reverse a string
  * @s: placeholder for string
- * Return: 0
+ * Return: nothing
 */
 
 void rev_string(char *s)
@@ -14,7 +14,7 @@ void rev_string(char *s)
 
 	while (s[strlen] != '\0')
 	{
-		i++;
+		strlen++;
 	}
 	while (i < strlen--)
 	{
