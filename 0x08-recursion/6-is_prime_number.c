@@ -19,7 +19,7 @@ int is_prime_number(int n)
 }
 
 /**
- * is_divisble -checks if number is divisible
+ * is_divisible - checks if number is divisible
  * @num: int number to be checked
  * @div: the result after dividing
  * Return: 1 if the number is divisible an d0 if the number isn't
