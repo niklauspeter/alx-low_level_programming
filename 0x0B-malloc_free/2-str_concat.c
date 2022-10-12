@@ -61,6 +61,6 @@ char *str_concat(char *s1, char *s2)
 			}
 		}
 		nw_string[i] = '\0';
-		return (nw_string);
+		return (start1);
 	}
 }
