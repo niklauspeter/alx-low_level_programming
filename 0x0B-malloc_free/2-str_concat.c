@@ -1,11 +1,13 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * str_concat - function concatenates two strings
  * puts them into newly allocated space in memory
  * @s1 : first string
  * @s2 : second string
- * Return: null if emty string is passed
+ * Return: pointer to the concatenated string and 
+ * null if emty string is passed
 */
 
 char *str_concat(char *s1, char *s2)
@@ -45,7 +47,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	if (nw_string != NULL)
+	else
 	{
 		for (i = 0; i < (len1 + len2); i++)
 		{
@@ -63,4 +65,5 @@ char *str_concat(char *s1, char *s2)
 		nw_string[i] = '\0';
 		return (start1);
 	}
+	return 0;
 }
