@@ -2,7 +2,7 @@
 
 /**
  * list_len - function coutns number of elements in list
- * @h: list whose funcitons are to be counted
+ * @h: head of linked list
  * Return: number of items on list
 */
 
@@ -13,11 +13,8 @@ size_t list_len(const list_t *h)
 
 	while (h)
 	{
-		if (h != NULL)
-		{
-			count++;
-			h = h->next;
-		}
-		return (count);
+		count++;
+		h = h->next;
 	}
+	return (count);
 }
