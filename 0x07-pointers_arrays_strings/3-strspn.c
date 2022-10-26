@@ -11,15 +11,15 @@ unsigned int _strspn(char *s, char *accept)
 {
 	int count = 0;
 
-	while (*accept)
+	while (*s)
 	{
-		while (*s)
+		while (*accept)
 		{
 			if (*accept == *s && *s != ',')
 				count++;
 		}
-		s++;
+		accept++;
 	}
-	accept++;
+	s++;
 	return (count);
 }
