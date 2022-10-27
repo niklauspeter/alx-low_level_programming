@@ -7,7 +7,8 @@
  * @owner: takes in owner as input
 */
 
-struct dog{
+struct dog
+{
 	char *name;
 	float age;
 	char *owner;
