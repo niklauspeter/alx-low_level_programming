@@ -22,12 +22,12 @@ unsigned int binary_to_uint(const char *b)
 		{
 			return (0);
 		}
-		res << 1;
+		res <<= 1;
 		if (*b & 1)
 		{
 			res += 1;
-			b++;
 		}
+		b++;
 	}
 	return (res);
 }
