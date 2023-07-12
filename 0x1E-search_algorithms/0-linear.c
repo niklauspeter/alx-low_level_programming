@@ -1,4 +1,4 @@
-#include <sdtio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include "search_algos.h"
 
@@ -10,7 +10,8 @@
  * Return: index of value or -1 if not found
  *
  * Function takes in ann array, it's size and a value to be searched
- * It loops over each element of the array, ultimately returning the value being looked for.
+ * It loops over each element of the array,
+ * Ultimately returning the value being looked for.
  */
 
 int linear_search(int *array, size_t size, int value)
