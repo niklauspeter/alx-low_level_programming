@@ -101,3 +101,55 @@ def jump_search(array, element):
     return -1
 Use code with caution. Learn more
 This algorithm takes a constant amount of space, regardless of the size of the array. The only variables that the algorithm needs to store are the current index, the element to be searched for, the block size, and the array of elements. These variables are all integers, which only require a constant amount of space.
+
+
+Exponential search is a search algorithm that works on sorted arrays. The algorithm works by first finding the smallest power of 2 that is greater than the search element. The algorithm then starts at that power of 2 and performs a binary search on the range of elements that are at least that power of 2. If the element is found in the range, then the algorithm returns its index. If the element is not found in the range, then the algorithm returns -1.
+
+EXPONENTIAL SEARCH ALGORITHM
+
+The exponential search algorithm works as follows:
+
+Find the smallest power of 2 that is greater than the search element.
+Start at that power of 2 and perform a binary search on the range of elements that are at least that power of 2.
+If the element is found in the range, then return its index.
+If the element is not found in the range, then return -1.
+The exponential search algorithm is a good choice for searching sorted arrays that are large enough that binary search would be inefficient. The exponential search algorithm has a time complexity of O(log log n), which is better than the time complexity of linear search (O(n)) and jump search (O(√n)) but worse than the time complexity of binary search (O(log n)).
+
+Here is an example of the exponential search algorithm in Python:
+
+Python
+def exponential_search(array, element):
+    """
+    Perform an exponential search on the sorted array.
+
+    Args:
+        array: The sorted array.
+        element: The element to be searched for.
+
+    Returns:
+        The index of the element in the array, if found, or -1 if not found.
+    """
+
+    i = 1
+    while i < len(array) and array[i] < element:
+        i = i * 2
+
+    if i >= len(array):
+        return -1
+
+    low = i // 2
+    high = i
+    while low <= high:
+        mid = (low + high) // 2
+        if array[mid] == element:
+            return mid
+        elif array[mid] < element:
+            low = mid + 1
+        else:
+            high = mid - 1
+
+    return -1
+Use code with caution. Learn more
+This algorithm takes a constant amount of space, regardless of the size of the array. The only variables that the algorithm needs to store are the current index, the element to be searched for, the array of elements, and the smallest power of 2 that is greater than the search element. These variables are all integers, which only require a constant amount of space.
+
+The exponential search algorithm is a good choice for searching large sorted arrays. The algorithm is very efficient and can find the target value in a logarithmic number of comparisons.
