@@ -1,5 +1,8 @@
 #ifndef _DOG_H_
 #define _DOG_H_
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * struct dog - takes in name age and owner
  * @name: takes in name as input
@@ -14,6 +17,7 @@ struct dog
 	char *owner;
 };
 
-void init_dog(stuct dog *d, char *name, float age, char *owner);
+void init_dog(struct dog *d, char *name, float age, char *owner);
+
 
 #endif /*_DOG_*/
