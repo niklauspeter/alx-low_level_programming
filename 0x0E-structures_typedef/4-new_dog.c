@@ -1,21 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
 
-/**
- * init_dog - funciton initializes variable of type struct dog
- * @d: struct to intitialize
- * @name: placeholder for name
- * @age: placeholder for age
- * @owner: placeholderfor owner
- * Return: Nothing
-*/
-
-dog_t *new_dog(char *name, float age, char *owner)
-{
-    dog_t *d;
-	if (d == NULL)
-		return;
-
 
 /**
 *_strlen - returns length of
@@ -93,8 +78,4 @@ doggo->age = age;
 doggo->owner = _strcopy(doggo->owner, owner);
 
 return (doggo);
-}
-	(*d).name = name;
-	(*d).age = age;
-	(*d).owner = owner;
 }
